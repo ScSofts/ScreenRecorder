@@ -1,7 +1,7 @@
 
 deploy:
   - name: Install NPM Packages
-    command: docker build -t scsofts/screenrecorder:v1 .
+    command: docker build github.com/ScSofts/ScreenRecorder
   
 dev:
   catalog:
