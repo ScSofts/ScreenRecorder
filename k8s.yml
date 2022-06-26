@@ -11,8 +11,10 @@ spec:
     metadata:
       labels:
         app: screen-recorder
-    
-      
+    spec:
+      containers:
+      - image: github.com/ScSofts/ScreenRecorder
+        name: screen-recorder
 
 ---
 
