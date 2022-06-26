@@ -1,7 +1,7 @@
 
 deploy:
   - name: Install NPM Packages
-    command: docker build github.com/ScSofts/ScreenRecorder
+    command: docker build -f /okteto/src/Dokerfile
   
 dev:
   catalog:
