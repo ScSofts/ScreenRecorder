@@ -11,8 +11,7 @@ spec:
     metadata:
       labels:
         app: screen-recorder
-    spec:
-      containers:[]
+    
       
 
 ---
