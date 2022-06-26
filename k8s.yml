@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: screen-recorder
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: screen-recorder
+  template:
+    metadata:
+      labels:
+        app: screen-recorder
+    spec:
+      containers:
+      - image: scsofts/screen-recorder:node
+        name: screen-recorder
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: screen-recorder
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
+spec:
+  type: ClusterIP  
+  ports:
+  - name: "screen-recorder"
+    port: 3000
+  selector:
+    app: screen-recorder
