@@ -1,10 +1,10 @@
 
 deploy:
   - name: Install NPM Packages
-    command: docker build -f /okteto/src/Dokerfile /okteto/src
+    command: helm upgrade --install front-end .
   
 dev:
-  catalog:
+  front-end:
     command: cd /okteto/src && yarn start
     forward:
       - 3000:3000
