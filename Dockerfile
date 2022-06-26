@@ -1,15 +1,14 @@
-FROM node:14-slim
+FROM node:alpine
 
 # setup okteto message
 COPY bashrc /root/.bashrc
 
-WORKDIR /usr/src/app
+WORDIR /usr/src/app
 
-ADD package.json .
-RUN npm install
+COPY package.json
 
-COPY index.js .
+RUN yarn install
 
-EXPOSE 3000
+COPY . /usr/src/app
 
-CMD npm start
+CMD ["yarn", "run". "start"]
