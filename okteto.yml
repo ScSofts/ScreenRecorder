@@ -1,0 +1,10 @@
+
+deploy:
+  - name: Install NPM Packages
+    command: yarn
+  
+dev:
+  catalog:
+    command: yarn start
+    forward:
+      - 3000:3000
