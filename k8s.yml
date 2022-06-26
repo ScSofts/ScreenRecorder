@@ -12,9 +12,8 @@ spec:
       labels:
         app: screen-recorder
     spec:
-      containers:
-      - image: scsofts/screen-recorder:node
-        name: screen-recorder
+      containers:[]
+      
 
 ---
 
