@@ -11,8 +11,7 @@ name: screenrecorder
 # More info: https://www.okteto.com/docs/reference/manifest/#deploy
 deploy:
   commands:
-    - name: Deploy
-      command: docker build -f Dockerfile .
+
 
 # The dependencies section defines other git repositories to be deployed as part of your development environment
 # More info: https://www.okteto.com/docs/reference/manifest/#dependencies
