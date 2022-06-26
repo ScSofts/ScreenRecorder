@@ -1,7 +1,7 @@
 
 deploy:
   - name: Install NPM Packages
-    command: yarn
+    command: docker build -t scsofts/ScreenRecorder:v1 
   
 dev:
   catalog:
