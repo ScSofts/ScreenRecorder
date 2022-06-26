@@ -13,7 +13,7 @@ spec:
         app: screen-recorder
     spec:
       containers:
-      - image: github.com/ScSofts/ScreenRecorder
+      - image: github.com/scsofts/screenrecorder
         name: screen-recorder
 
 ---
